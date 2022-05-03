@@ -1,0 +1,49 @@
+.register-container {
+    width: 100vw;
+    height: calc(100vh - 200px);
+    background-color: rgb(247, 246, 246);
+    & h2 {
+        margin: 0;
+        padding: 50px 0;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    .register-container-field-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .register-container-field {
+            width: 25%;
+            & div {
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                & label {
+                    flex: 1;
+                }
+                & input {
+                    flex: 2;
+                    border: none;
+                    padding: 10px;
+                    border-radius: 10px;
+                    background-color: rgb(240, 221, 221);
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                & button {
+                    width: 50%;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: pink;
+                    padding: 15px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
